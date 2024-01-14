@@ -33,6 +33,11 @@ function App() {
     // Function to fetch initial data
     const fetchInitialData = async () => {
       try {
+        /*
+          eslint-disable-next-line no-unused-vars
+        */
+        const subredditNames = ['AskReddit', 'funny', 'news', 'aww', 'gaming'];
+  
         // Fetch popular subreddits and limit to 10
         const subredditData = await fetchPopularSubreddits();
         setSubreddits(subredditData.slice(0, 10));
@@ -61,8 +66,7 @@ function App() {
     };
   
     fetchInitialData();
-  }, [subredditNames]);  // Include subredditNames in the dependency array
-  
+  }, []); 
   
 
   useEffect(() => {
