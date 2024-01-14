@@ -61,7 +61,8 @@ function App() {
     };
   
     fetchInitialData();
-  }, []);
+  }, [subredditNames]);  // Include subredditNames in the dependency array
+  
   
 
   useEffect(() => {
