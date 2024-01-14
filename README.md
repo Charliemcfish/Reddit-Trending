@@ -47,3 +47,20 @@ Toggle between light and dark mode for a personalized browsing experience.
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/your-username/RedditTrending.git
+
+2. **Install Dependencies:**
+```bash
+cd RedditTrending
+npm install
+```
+
+3. **Run the App!**
+```bash
+npm start
+```
+**Open your browser and visit http://localhost:3000 to see RedditTrending in action.**
+
+**If you would like to contribute to RedditTrending please feel free to do so!**
+
+**Happy browsing, and enjoy the latest trends on Reddit with RedditTrending!**
+
