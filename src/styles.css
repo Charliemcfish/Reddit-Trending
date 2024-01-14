@@ -4,7 +4,7 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('background-image.jpg'); /* Replace with the actual image filename */
+  background-image: url('background-image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -14,7 +14,7 @@ body {
 /* Navigation bar styles */
 .nav-bar {
   background-color: white;
-  padding: 10px;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,63 +22,63 @@ body {
 }
 
 .nav-bar img {
-  width: 100px; /* Adjust the width as needed */
+  max-width: 7%; /* Adjust the width as needed */
   height: auto;
 }
 
 .header {
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
   background-color: #fcba03;
   color: white;
   border-bottom: 1px solid #ccc;
-  position: relative;
 }
 
 .header h1 {
-  font-size: 36px;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
 .header p {
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .search-bar {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1rem;
 }
 
 .search-input {
-  padding: 10px;
+  padding: 0.5rem;
   border: 2px solid #ccc;
   border-radius: 5px 0 0 5px;
   width: 70%;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .search-button {
-  padding: 10px 20px;
-  background-color: #fcba03; /* Change the button color */
+  padding: 0.5rem 1rem;
+  background-color: #fcba03;
   border: none;
   border-radius: 0 5px 5px 0;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
 .columns {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px;
+  margin: 1rem;
 }
 
 .columns > div {
   flex: 1;
-  margin-right: 20px;
-  padding: 20px;
+  margin-bottom: 1rem;
+  padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   animation: fadeIn 0.5s ease;
@@ -100,25 +100,23 @@ a {
   color: inherit;
 }
 
-/* Make hyperlinks bold and slightly bigger on mouseover */
 a:hover {
   font-weight: bold;
   font-size: 1.05em;
 }
 
-/* Remove bullet points, add roundness, margin, and set different shades of orange */
 ul {
   list-style-type: none;
   padding: 0;
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   border-radius: 5px;
   margin: 5px;
-  padding: 10px;
-  text-align: center; /* Center-align the text */
-  transition: background-color 0.3s; /* Add a transition for background color change */
+  padding: 1rem;
+  text-align: center;
+  transition: background-color 0.3s;
 }
 
 li:nth-child(odd) {
@@ -129,11 +127,10 @@ li:nth-child(even) {
   background-color: #ffcc66;
 }
 
-/* Style the video wrapper */
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+  padding-bottom: 56.25%;
 }
 
 .video-wrapper iframe {
@@ -144,24 +141,21 @@ li:nth-child(even) {
   height: 100%;
 }
 
-/* Style the post text */
 .post-text {
   margin-top: 5px;
   font-weight: bold;
-  font-size: 1.05em;
+  font-size: 1rem;
 }
 
-/* Change background color to black on hover */
 li:hover {
   background-color: black;
-  color: white; /* Change text color to white on hover */
+  color: white;
 }
 
-/* Style the video wrapper */
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+  padding-bottom: 56.25%;
 }
 
 .video-wrapper iframe {
@@ -172,44 +166,31 @@ li:hover {
   height: 100%;
 }
 
-/* Style the post text */
 .post-text {
   margin-top: 5px;
   font-weight: bold;
-  font-size: 1.05em;
-} 
+  font-size: 1rem;
+}
 
 /* Mobile styles */
 @media screen and (max-width: 768px) {
-  /* Mobile navigation */
   .nav-bar {
     display: none;
   }
-  
-  .nav-toggle {
-    display: block;
-  }
-  
-  .nav-menu {
-    display: none;
-    background-color: #fff;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid #ddd;
-  }
-  
-  .nav-menu.show {
-    display: block;
+
+  .search-input,
+  .search-button {
+    width: 100%; /* Full width on mobile */
   }
 
-  /* Adjust the size of elements for mobile */
-  h1 {
-    font-size: 1.5rem;
+  .columns {
+    flex-direction: column;
   }
 
-  /* Center the header text on mobile */
+  .columns > div {
+    margin-right: 0;
+  }
+
   .header {
     text-align: center;
     position: relative;
@@ -217,12 +198,10 @@ li:hover {
     transform: translateY(-50%);
   }
 
-  /* Increase button size on mobile */
   .search-button {
     font-size: 1.2rem;
   }
 
-  /* Center-align the search input */
   .search-input {
     text-align: center;
   }
@@ -233,39 +212,35 @@ li:hover {
   background-color: #000;
   color: #fff;
   transition: background-color 0.5s, color 0.5s;
-  
 }
 
-/* Dark mode button */
 .dark-mode-button {
   background: none;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0 10px;
-  margin-left: auto; /* Move button to the far right */
+  margin-left: auto;
 }
 
 .dark-mode .columns {
-  background-color: #1d1d1d; /* Dark grey background for columns in dark mode */
-  
+  background-color: #1d1d1d;
 }
 
 .dark-mode ul li {
-  background-color: #727272; /* Dark grey background for list elements in dark mode */
+  background-color: #727272;
 }
-
 
 .columns-center {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 1rem;
 }
 
 .columns-center > div {
   flex: 1;
-  margin-right: 20px;
-  padding: 20px;
+  margin-right: 1rem;
+  padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   animation: fadeIn 0.5s ease;
