@@ -2,6 +2,11 @@
 
 Welcome to RedditTrending – your one-stop destination to catch up on the latest and hottest content trending across various subreddits on Reddit!
 
+![enter image description here](https://i.imgur.com/Iaz32jx.jpg)
+
+## LIVE DEMO: [Click here to try RedditTrending!](link)
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
